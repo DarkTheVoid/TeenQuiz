@@ -1,0 +1,71 @@
+<!DOCTYPE htmly5>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do Quiz</title>
+    <link rel="stylesheet" href="CadastroQuiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="CadastroQuiz.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="" alt="">
+        <h1>Cadastre seu próprio Quiz!</h1>
+    </header>
+    <section>
+        <div class="CadastroInformações">
+            <ul>
+                <li>
+                    <label for=""> Nome:
+                        <input id="NomeQuiz" type="text" placeholder="Decida o nome do seu Quiz">
+                    </label>
+                </li>
+                <li>
+                    <label for=""> Imagem:
+                        <input id="IMGQuiz" type="text" placeholder="Link da imagem desejada">
+                    </label>
+                </li>
+                <li>
+                    <label for=""> Escolha a quantidade de perguntas que terá em seu Quiz <i class="fa fa-bars"></i>
+                        <select name="" id="QuantQuestoes">
+                            <option value="4">4</option>
+                            <option value="8">8</option>
+                            <option value="10">10</option>
+                        </select>
+                    </label>
+                </li>
+                <button onclick="BotaoCadastrarQuiz()">Cadastrar</button>
+            </ul>
+        </div>
+
+        <div class="CadastroPerguntas">
+            <h1>Formule suas questões!</h1>
+            <ul>
+                <li>
+                    <label for=""> Pergunta:
+                        <input type="text" placeholder="Digite sua pergunta" id="PerguntaEscrita">
+                    </label>
+                </li>
+                <li>
+                    <label for="">
+                        <input type="text" placeholder="Coloque o link da imagem desejada" id="LinkIMGPergunta">
+                        <img id="IMGQuestões" class="" src="" alt="">
+                    </label>
+                </li>
+                <li></li>
+                <div class="respostas">
+                    <input type="text" id="Resp1" placeholder="Resposta 1">
+                    <input type="text" id="Resp2" placeholder="Resposta 2">
+                    <input type="text" id="Resp3" placeholder="Resposta 3">
+                    <input type="text" id="Resp4" placeholder="Resposta 4">
+                </div>
+            </ul>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+
+</html>
