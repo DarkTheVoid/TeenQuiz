@@ -1,21 +1,23 @@
-<!DOCTYPE htmly5>
+<!DOCTYPE html5>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro do Quiz</title>
-    <link rel="stylesheet" href="CadastroQuiz.css">
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CadastroQuiz.css">
+    <link rel="stylesheet" href="../root.css">
     <script defer src="CadastroQuiz.js"></script>
 </head>
 
 <body>
     <header>
-        <img src="" alt="">
-        <h1>Cadastre seu próprio Quiz!</h1>
+        <img src="../Imagens/Group 1Protótipo.png" alt="">
+        <button>Voltar</button>
     </header>
     <section>
+        <h1>Cadastre seu próprio Quiz!</h1>
         <div class="CadastroInformações">
             <ul>
                 <li>
@@ -25,11 +27,13 @@
                 </li>
                 <li>
                     <label for=""> Imagem:
-                        <input id="IMGQuiz" type="text" placeholder="Link da imagem desejada">
+                        <input id="IMGQuiz" type="text" placeholder="Link da imagem desejada"
+                            onkeyup="CarregarImagem()"><br>
+                        <img id="CapadoQuiz" alt="" class="CapaQuiz">
                     </label>
                 </li>
                 <li>
-                    <label for=""> Escolha a quantidade de perguntas que terá em seu Quiz <i class="fa fa-bars"></i>
+                    <label for=""> Quantidade de perguntas
                         <select name="" id="QuantQuestoes">
                             <option value="4">4</option>
                             <option value="8">8</option>
@@ -37,8 +41,8 @@
                         </select>
                     </label>
                 </li>
-                <button onclick="BotaoCadastrarQuiz()">Cadastrar</button>
             </ul>
+            <button onclick="CadastrarQuiz()">Cadastrar Quiz</button>
         </div>
 
         <div class="CadastroPerguntas">
@@ -51,8 +55,9 @@
                 </li>
                 <li>
                     <label for="">
-                        <input type="text" placeholder="Coloque o link da imagem desejada" id="LinkIMGPergunta">
-                        <img id="IMGQuestões" class="" src="" alt="">
+                        <input type="text" placeholder="Coloque o link da imagem desejada" id="LinkIMGPergunta"
+                            onkeyup="CarregarImagemPerg()"> <br>
+                        <img id="IMGQuestões" class="CapaQuiz" src="" alt="">
                     </label>
                 </li>
                 <li></li>
@@ -61,6 +66,18 @@
                     <input type="text" id="Resp2" placeholder="Resposta 2">
                     <input type="text" id="Resp3" placeholder="Resposta 3">
                     <input type="text" id="Resp4" placeholder="Resposta 4">
+                    <p>
+                        Resposta Certa 
+                        <select name="" id="RespCerta">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </p>
+                    <button onclick="BotaoCadastrarQuiz()">Cadastrar pergunta</button>
+
+
                 </div>
             </ul>
         </div>
@@ -69,3 +86,5 @@
 </body>
 
 </html>
+
+<!--Página pronta-->

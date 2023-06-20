@@ -1,0 +1,30 @@
+body {
+    background-image: url('../Imagens/Mask\ groupProtótipo.png');
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+a{
+    padding: 30px;
+}

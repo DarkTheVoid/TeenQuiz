@@ -6,11 +6,12 @@ var Resp1 = document.getElementById('Resp1')
 var Resp2 = document.getElementById('Resp2')
 var Resp3 = document.getElementById('Resp3')
 var Resp4 = document.getElementById('Resp4')
+var certo = document.getElementById('RespCerta')
 
 var QuantQuestoes = document.getElementById('QuantQuestoes')
 
 var Quizes = []
-Quizes = localStorage.getItem('BDQuizes')
+Quizes = JSON.parse(localStorage.getItem('BDQuizes'))
 var Contador = 0
 
 if (Quizes == null) {
@@ -35,12 +36,28 @@ function BotaoCadastrarQuiz() {
                 Resp2.value,
                 Resp3.value,
                 Resp4.value
-            ]
+            ],
+            respcerta: certo.value
         }
-    
+   
         Quiz.Infos.push(InfosPerguntaERespostas)
     }else {
         console.log(Quiz);
         alert('Numero maximo definido atingido ')
     }
 }
+
+function CarregarImagem() {
+    document.getElementById('CapadoQuiz').src = document.getElementById('IMGQuiz').value
+}
+function CarregarImagemPerg(){
+    document.getElementById('IMGQuestões').src = document.getElementById('LinkIMGPergunta').value
+}
+
+
+function CadastrarQuiz() {
+    localStorage.setItem('BDQuizes',JSON.parse)
+    alert('Quiz cadastrado!')
+    location.href = '../TelaInicial/TelaInicial.html'
+}
+

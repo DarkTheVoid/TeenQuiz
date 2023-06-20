@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: linear-gradient(rgb(189, 167, 242), rgb(255, 211, 248));
+    background-repeat:no-repeat;
+    color: var(--Branco);
+}
+
+.Header{
+    background-color: var(--Roxo);
+    height: 70px;
+    border-bottom: 2px dotted var(--Branco);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.SectionLadoEsquerdo{
+    background-color: #1900554b;
+    border: 1px dotted var(--Branco);
+    border-radius: 15px;
+    float: left;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+}
+
+header>img{
+    width: 90px;
+    height: 60px;
+    margin: 10px;
+}
+
+.SectionLadoDireito{
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+button{
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--Rosa);
+    border: 2px solid var(--Branco);
+    border-radius: 10px;
+}
